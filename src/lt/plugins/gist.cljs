@@ -8,9 +8,6 @@
             [lt.util.js :as util])
   (:require-macros [lt.macros :refer [behavior defui]]))
 
-
-(def gist (object/create (object/object* ::gist :name "Gist data" :behaviors [::submit-gist ::on-out])))
-
 (defn get-current-file []
     (let [ed   (pool/last-active)
           info (:info @ed)
@@ -24,11 +21,15 @@
                       (proc/exec {:command "gist" :args [(get-current-file)]:obj gist})))
 
 (behavior ::on-out
-                  :triggers #{:proc.out}
-                  :reaction (fn [this data]
-                              (let [out (.toString data)]
-                                (.set editor/clipboard out "text")
-                                (notifos/set-msg! (str "Copied " out " to clipboard")))))
+          :triggers #{:proc.out :proc.error} ;; proc/exec has a copy of the gist object
+          :reaction (fn [this data]
+                      (let [out (.toString data)]
+                        (.set editor/clipboard out "text")
+                        (notifos/set-msg! (str "Copied " out " to clipboard")))))
+
+(def gist (object/create (object/object* ::gist
+                                         :name "Gist data"
+                                         :behaviors [::submit-gist ::on-out ::on-error])))
 
 (cmd/command {:command :gist.submit
               :desc "Gist: Submit Gist"

@@ -3,12 +3,13 @@
  "sources":["src/lt/plugins/gist.cljs"],
  "lineCount":30,
  "mappings":
- ";AAAA;;;;;;;;;;;;;;;;AAWA,AAAKA,uBAAK,AAACC,2BAAc,iCAAA,kFAAA,qDAAA,YAAA,8DAAA,mFAAA,gGAAA,raAACC;AAE1B,mCAAA,6BAAA,hEAAMC,gEACF,qRAAA,jRAAMC,KAAK,AAACC,+CACNC,OAAK,AAAA,mFAAO,AAAAC,0BAACH,SACbI,OAAK,AAAA,mFAAOF,MAEhBE;;AAEN,AAAA,AAAAC,qCAAA,oCAAA,PAEyBE,OACH,mCAAA,2CAAA,2DAAA,OAAA,qDAAA,uIAAA,rUAACC,iRAAkC,AAACT,uGAAuBH;;AAHjF,AAAAU,mCAAA,gGAAA,6DAAAD,mCAAA,6DAAA,iFAAA;AAKA,AAAA,AAAAI,gCAAA,oCAAA,ZAEiCF,MAAKG,MACR,0BAAA,tBAAMC,MAAI,AAAWD,gBACnB,iCAAA,jCAAME,6BAAiBD;AACvB,OAACE,wCAAiB,eAAA,4CAAA,nBAAeF;;AALjE,AAAAL,mCAAA,sFAAA,6DAAAG,8BAAA,6DAAA,iFAAA;AAOA,kCAAA,2CAAA,2DAAA,mEAAA,qDAAA,oBAAA,pRAACK,yUAEmB,aAAA,AAAO,sDAAA,/CAACC,0BAAanB",
+ ";AAAA;;;;;;;;;;;;;;;;AAUA,mCAAA,6BAAA,hEAAMA,gEACF,qRAAA,jRAAMC,KAAK,AAACC,+CACNC,OAAK,AAAA,mFAAO,AAAAC,0BAACH,SACbI,OAAK,AAAA,mFAAOF,MAEhBE;;AAEN,AAAA,AAAAC,qCAAA,oCAAA,PAEyBE,OACH,mCAAA,2CAAA,2DAAA,OAAA,qDAAA,uIAAA,rUAACC,iRAAkC,AAACT,uGAAuBU;;AAHjF,AAAAH,mCAAA,gGAAA,6DAAAD,mCAAA,6DAAA,iFAAA;AAKA,AAAA,AAAAK,gCAAA,oCAAA,ZAEyBH,MAAKI,MACR,0BAAA,tBAAMC,MAAI,AAAWD,gBACnB,iCAAA,jCAAME,6BAAiBD;AACvB,OAACE,wCAAiB,eAAA,4CAAA,nBAAeF;;AALzD,AAAAN,mCAAA,sFAAA,6DAAAI,8BAAA,6DAAA,iFAAA,kEAAA;AAOA,AAAKD,uBAAK,AAACM,2BAAc,iCAAA,kFAAA,qDAAA,YAAA,8DAAA,mFAAA,gGAAA,sFAAA,3fAACC;AAI1B,kCAAA,2CAAA,2DAAA,mEAAA,qDAAA,oBAAA,pRAACC,yUAEmB,aAAA,AAAO,sDAAA,/CAACC,0BAAaT",
  "names":
- ["lt.plugins.gist/gist", "lt.object/create", "lt.object/object*",
-  "lt.plugins.gist/get-current-file", "ed",
+ ["lt.plugins.gist/get-current-file", "ed",
   "lt.objs.editor.pool/last-active", "info", "cljs.core/deref", "path",
   "lt.plugins.gist/__BEH__submit-gist", "lt.object/behavior*", "this",
-  "lt.objs.proc/exec", "lt.plugins.gist/__BEH__on-out", "data", "out",
+  "lt.objs.proc/exec", "lt.plugins.gist/gist",
+  "lt.plugins.gist/__BEH__on-out", "data", "out",
   "lt.objs.editor/clipboard", "lt.objs.notifos/set-msg!",
-  "lt.objs.command/command", "lt.object/raise"]}
+  "lt.object/create", "lt.object/object*", "lt.objs.command/command",
+  "lt.object/raise"]}

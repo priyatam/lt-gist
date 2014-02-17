@@ -7,11 +7,13 @@ Installation
 ============
 
 * `gem install gist` (required)
-* `Plugin Manager :: Install Gist`
+* From `Plugin Manager` install `Gist`
 
 Development
 ===========
 
+* From `Plugin Manager` uninstall `Gist`
+* `gem install gist` (required)
 * Clone the repo into your plugins folder
   * On OS X: `~/Library/Application Support/LightTable/plugins/`
   * On Linux: `~/.config/LightTable/plugins/`
