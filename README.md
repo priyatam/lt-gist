@@ -26,7 +26,7 @@ Bindings
 
 Add,
 
-    "<keybinding>" [:lt.plugins.gist/submit-gist]
+    "<keybinding>" [:gist.submit]
 
 in user.keymap, under :editor
 
