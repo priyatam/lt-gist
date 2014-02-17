@@ -1,7 +1,7 @@
 LightTable-Gist
 ===============
 
-Gist the current buffer
+Gist the current tab
 
 Installation
 ============
