@@ -6,28 +6,27 @@ Gist the current buffer
 Installation
 ============
 
-gem install gist
-Plugin Manager :: Install Gist
-
+* `gem install gist`
+* `Plugin Manager :: Install Gist`
 
 Development
 ===========
 
-git clone to "~/Library/Application Support/LightTable/plugins/" (Mac OSX)
+`git clone` to "~/Library/Application Support/LightTable/plugins/" (Mac OSX)
 
 Bindings
 ========
 
 Add,
 
-  "<keybinding>" [:lt.plugins.gist/submit-gist]
+    "<keybinding>" [:lt.plugins.gist/submit-gist]
 
 in user.keymap, under editor
 
 TODO
 ====
 
-* Add github Api
+* Add github Api keys
 * Make it pure node.js
 
 
