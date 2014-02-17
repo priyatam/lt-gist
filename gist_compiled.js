@@ -25,7 +25,7 @@ lt.plugins.gist.__BEH__on_out = (function __BEH__on_out(this$,data){var out = da
 return lt.objs.notifos.set_msg_BANG_.call(null,[cljs.core.str("Copied "),cljs.core.str(out),cljs.core.str(" to clipboard")].join(''));
 });
 lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("lt.plugins.gist","on-out","lt.plugins.gist/on-out",3422353434),new cljs.core.Keyword(null,"reaction","reaction",4441361819),lt.plugins.gist.__BEH__on_out,new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"proc.out","proc.out",4302083112),null], null), null));
-lt.objs.command.command.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"command","command",1964298941),new cljs.core.Keyword("lt.plugins.gist","submit-gist","lt.plugins.gist/submit-gist",4275136818),new cljs.core.Keyword(null,"desc","desc",1016984067),"Submit Gist",new cljs.core.Keyword(null,"exec","exec",1017031683),(function (){return lt.object.raise.call(null,lt.plugins.gist.gist,new cljs.core.Keyword(null,"gist-submit","gist-submit",4742521300));
+lt.objs.command.command.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"command","command",1964298941),new cljs.core.Keyword(null,"gist.submit","gist.submit",1335057685),new cljs.core.Keyword(null,"desc","desc",1016984067),"Gist: Submit Gist",new cljs.core.Keyword(null,"exec","exec",1017031683),(function (){return lt.object.raise.call(null,lt.plugins.gist.gist,new cljs.core.Keyword(null,"gist-submit","gist-submit",4742521300));
 })], null));
 }
 

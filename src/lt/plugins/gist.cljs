@@ -21,7 +21,7 @@
 (behavior ::submit-gist
           :triggers #{:gist-submit}
           :reaction (fn [this]
-                      (proc/exec {:command "gist" :args [(get-current-file)]:obj gist})));
+                      (proc/exec {:command "gist" :args [(get-current-file)]:obj gist})))
 
 (behavior ::on-out
                   :triggers #{:proc.out}
@@ -30,7 +30,7 @@
                                 (.set editor/clipboard out "text")
                                 (notifos/set-msg! (str "Copied " out " to clipboard")))))
 
-(cmd/command {:command ::submit-gist
-              :desc "Submit Gist"
+(cmd/command {:command :gist.submit
+              :desc "Gist: Submit Gist"
               :exec (fn [] (object/raise gist :gist-submit))})
 
