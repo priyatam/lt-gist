@@ -12,6 +12,10 @@ Install the gem for gist:
 
 Make sure LT_HOME is setup on your ENV.
 
+Start lighttable from command line. This ensures path variables are passed into LT.
+
+    light
+
 Ctrl-Space `Show plugin Manager`, click on 'Available' and browse for `Gist`.
 
 Click install.
