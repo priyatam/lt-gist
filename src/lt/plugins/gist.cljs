@@ -8,12 +8,21 @@
             [lt.util.js :as util])
   (:require-macros [lt.macros :refer [behavior defui]]))
 
+;; Object
+
+(def gist (object/create (object/object* ::gist
+                                         :name "Gist data"
+                                         :behaviors [::submit-gist ::on-out ::on-error])))
+
+
 (defn get-current-file []
     (let [ed   (pool/last-active)
           info (:info @ed)
           path (:path info)]
 ;;      (.log js/console path)
       path))
+
+;; Behaviors
 
 (behavior ::submit-gist
           :triggers #{:gist-submit}
@@ -27,11 +36,8 @@
                         (.set editor/clipboard out "text")
                         (notifos/set-msg! (str "Copied " out " to clipboard")))))
 
-(def gist (object/create (object/object* ::gist
-                                         :name "Gist data"
-                                         :behaviors [::submit-gist ::on-out ::on-error])))
-
+;; Commands
 (cmd/command {:command :gist.submit
-              :desc "Gist: Submit Gist"
+              :desc "Gist: Submit this file as Gist"
               :exec (fn [] (object/raise gist :gist-submit))})
 
